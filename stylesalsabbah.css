@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d1d1d1;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    padding-bottom: 62px;
+}
+
+nav{
+    background: #efefef;
+    position: fixed;
+    width: 100%;
+    box-shadow: -2px -7px 47px 9px rgba(0,0,0,0.35);
+}
+
+.nav-link {
+    /* padding-right: .5rem; */
+    padding-left: .5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo-section{
+    float: left;
+    padding: 18px;
+    font-family: serif;
+}
+
+.hb-button{
+    float: right;
+    background: #222;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #282828;
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav ul{
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: max-height 0,5s;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+li > a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+li > a:hover{
+    color: #000;
+}
+
+li > a:before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+body{
+    font-family: sans-serif;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+.logo-section{
+    float: none;
+}
+
+nav ul{
+    background: #ffffff;
+    max-height: 0;
+    width: 100%;
+}
+
+nav ul.show{
+    max-height: 20em;
+}
+
+nav ul li{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+}
+
+.hb-button{
+    display: inline;
+}
+}
+
+.caption{
+    text-align: center;
+    background-color: #7efaff;
+    margin: 0;
+    padding: 100px 25px;
+    margin-bottom: 10px;
+}
+
+.caption-text1{
+    font-family: 'Lato','Helvetica','Corbel',sans-serif;
+    font-size: 36px;
+    color: #3161a3;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.caption-text2{
+    font-family: 'Lato','Helvetica','Corbel',sans-serif;
+    font-size: 33px;
+    color: #3161a3;
+}
+
+h3{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.70rem;
+}
+
+.subject{
+    background-color: #d7eaea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.bodysubjectfra{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.subject{
+    background-color: #d7eaea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+h4{
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+div a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.slidebar-contact{
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: -350px;
+    transform: translateY(-50%);
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: -8px 5px 20px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+
+.slidebar-contact.active{
+    left: 0px;
+}
+
+.slidebar-contact input{
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.5);
+    outline: none;
+}
+
+.messages{
+    height: 90px;
+    resize: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.5);
+    outline: none;
+    width: 100%;
+}
+
+.slidebar-contact h2{
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.submit-send{
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-style: 18px;
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    right: -45px;
+    width: 45px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+}
+
+.toggle:before{
+    content: '\f003';
+    font-family: fontAwesome;
+    color: #fff;
+    font-size: 20px;
+}
+
+.option{
+    position: fixed;
+    width: 100%;
+}
+
+.toggle.active:before{
+    content: '\f00d'
+}
